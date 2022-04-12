@@ -1,0 +1,264 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-4.089592908950141, -4.165561844931021, -4.288764081244143, -4.183095923821639, -3.793394811180993, -3.71303366533318, -3.593394468657225, -3.889751844769118, -5.444060053183404, -3.785492338831538, -4.000809119471468, -4.433648387108194, -3.980021358065152, -3.63401137332567, -3.513737641772628, -4.164562875949086, -4.15258135843409, -4.433648387108194, -3.785492338831538, -4.165561844931021, -3.63401137332567, -3.890933321219644, -3.785492338831538, -4.813134060928257, -3.890933321219644, -9.348641589092372, -10.41163537758235, -4.539637264577843, -4.65716515824194, -10.62625357009531, -9.276610931799652, -4.288764081244143, -4.15258135843409, -4.918743841995393, -4.000809119471468, -3.910859461917791, -9.158779605969709, -3.961132532232932, -3.793394811180993, -3.895590417222182, -9.98311220958804, -4.089592908950141, -4.148807564103174, -4.219003821303605, -4.40454406913922, -4.911377436328977, -3.785492338831538, -4.165561844931021, -3.698513562029915, -4.089592908950141, -4.035302108542361, -3.980021358065152, -3.908640708918188, -3.599243144052445] 
+    ]
+  },
+ "Synonymous site-posteriors":  [
+[0.9999999999999999, 1, 1, 1, 0.9999999999999999, 1, 0.9999999999999999, 1, 1, 0.9999999999999999, 1, 1, 1, 1, 1, 1, 1, 1, 0.9999999999999999, 1, 1, 1, 0.9999999999999999, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.9999999999999999, 1, 1, 0.9999999999999999, 1, 1, 1, 1, 0.9999999999999999, 1, 1, 0.9999999999999999, 1, 1, 1, 1],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted \njointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. \nAssuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio \nstyle analysis to explore which individual sites may have been subject to selection. v2.0 adds support for synonymous rate variation, \nand relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2). Version 2.1 adds a grid search for the initial starting point.\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead. Version 3.0 implements the option\nfor branch-site variation in synonymous substitution rates. Version 3.1 adds HMM auto-correlation option for SRV, and binds SRV distributions for multiple branch sets\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "version":"3.1"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "NODE_10":{
+       "MG94xREV with separate rates for branch sets":0.006231002096372327,
+       "Nucleotide GTR":0.006197059675654297,
+       "unconstrained":0.006232122281439545
+      },
+     "SI_CH73_103B2_1_DANRE":{
+       "MG94xREV with separate rates for branch sets":0.01255900180884968,
+       "Nucleotide GTR":0.01245888621806611,
+       "original name":"SI@CH73-103B2.1_DANRE",
+       "unconstrained":0.01255770696494317
+      },
+     "SI_CH73_191K20_3_DANRE":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"SI@CH73-191K20.3_DANRE",
+       "unconstrained":0
+      },
+     "SI_DKEYP_72G6_2_DANRE":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1.467204015238844e-19,
+       "original name":"SI@DKEYP-72G6.2_DANRE",
+       "unconstrained":0
+      },
+     "SI_DKEYP_79F12_7_DANRE":{
+       "MG94xREV with separate rates for branch sets":0.006227512391175854,
+       "Nucleotide GTR":0.006191297398733751,
+       "original name":"SI@DKEYP-79F12.7_DANRE",
+       "unconstrained":0.006236408794273477
+      },
+     "SI_DKEY_17E16_18_DANRE":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"SI@DKEY-17E16.18_DANRE",
+       "unconstrained":0
+      },
+     "SI_DKEY_4I23_5_DANRE":{
+       "MG94xREV with separate rates for branch sets":0.01251567211364807,
+       "Nucleotide GTR":0.01245157732699381,
+       "original name":"SI@DKEY-4I23.5_DANRE",
+       "unconstrained":0.01252169800155533
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":579.1627728403779,
+     "Equilibrium frequencies":      [
+[0.02931563126909985],
+      [0.01075779054843958],
+      [0.02001449117401843],
+      [0.02948869063272192],
+      [0.02276991029885406],
+      [0.008355744536192986],
+      [0.01554556900127088],
+      [0.02290432821910553],
+      [0.02246917911221103],
+      [0.008245386922277317],
+      [0.01534025253970236],
+      [0.02260182172197016],
+      [0.02744142574022976],
+      [0.01007002400030579],
+      [0.01873492568653034],
+      [0.02760342108093704],
+      [0.01742721225779051],
+      [0.00639516500912333],
+      [0.01189797970644225],
+      [0.01753009055624349],
+      [0.01353598891412049],
+      [0.004967224900171139],
+      [0.009241347326497278],
+      [0.01361589610103966],
+      [0.01335721376941845],
+      [0.004901620801650538],
+      [0.009119293207214352],
+      [0.0134360655906015],
+      [0.01631305656158447],
+      [0.00598630962722442],
+      [0.01113731863987662],
+      [0.0164093576496069],
+      [0.02264966144656619],
+      [0.008311617498479603],
+      [0.01546347219869108],
+      [0.02278336950013725],
+      [0.01759234705552227],
+      [0.00645576358706116],
+      [0.01201072123062731],
+      [0.0176962001964661],
+      [0.01735999798886347],
+      [0.006370499770966044],
+      [0.01185209089784524],
+      [0.0174624795004112],
+      [0.02120162437990631],
+      [0.007780239568169658],
+      [0.01447486223753142],
+      [0.02132678421662483],
+      [0.01176330314605741],
+      [0.03224494897266122],
+      [0.02489817553594279],
+      [0.009136741931130838],
+      [0.01699858720213019],
+      [0.02504515727322991],
+      [0.009016069376564899],
+      [0.01677408015605682],
+      [0.02471437600235162],
+      [0.03000632967232923],
+      [0.01101125221487538],
+      [0.02048604769512648],
+      [0.03018346644520169] 
+      ],
+     "Log Likelihood":-255.1813292425749,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[0.6283030541547762, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":22
+    },
+   "Nucleotide GTR":{
+     "AIC-c":579.1627728403779,
+     "Equilibrium frequencies":      [
+[0.2880658436213992],
+      [0.1851851851851852],
+      [0.2242798353909465],
+      [0.3024691358024691] 
+      ],
+     "Log Likelihood":-260.6330799583441,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.6030206951966177,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.3682620933269206,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":0.5738546616683375,
+       "Substitution rate from nucleotide G to nucleotide T":0.4735157570026866
+      },
+     "display order":0,
+     "estimated parameters":17
+    },
+   "Unconstrained model":{
+     "AIC-c":579.1627728403779,
+     "Log Likelihood":-255.1841261462164,
+     "Rate Distributions":{
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0,
+           "rate":0.8900310946518589
+          },
+         "1":{
+           "proportion":1,
+           "rate":1
+          },
+         "2":{
+           "proportion":0,
+           "rate":1.006282692084838
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0.5030348203005027,
+           "proportion":0.0275252497873008
+          },
+         "1":{
+           "omega":0.5388977736291632,
+           "proportion":0.7474227729188558
+          },
+         "2":{
+           "omega":1,
+           "proportion":0.2250519772938434
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":31
+    }
+  },
+ "input":{
+   "file name":"/home/aglucaci/BUSTEDS-MH/data/selectome_trip_ammended/ENSGT00610000087457.Euteleostomi.001.nex",
+   "number of sequences":6,
+   "number of sites":54,
+   "partition count":1,
+   "trees":{
+     "0":"((SI_CH73_191K20_3_DANRE,SI_CH73_103B2_1_DANRE)NODE_10,SI_DKEYP_79F12_7_DANRE,SI_DKEY_4I23_5_DANRE,SI_DKEY_17E16_18_DANRE,SI_DKEYP_72G6_2_DANRE)"
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "NODE_10":"test",
+     "SI_CH73_103B2_1_DANRE":"test",
+     "SI_CH73_191K20_3_DANRE":"test",
+     "SI_DKEYP_72G6_2_DANRE":"test",
+     "SI_DKEYP_79F12_7_DANRE":"test",
+     "SI_DKEY_17E16_18_DANRE":"test",
+     "SI_DKEY_4I23_5_DANRE":"test"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":12
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":2
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":9
+    }
+  }
+}

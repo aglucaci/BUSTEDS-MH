@@ -1,0 +1,276 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-3.523640551351062, -8.011738875325122, -15.67629657222574, -8.376148554272605, -6.540628189360445, -9.04928217391015, -13.02991102257701, -4.911717146830066, -4.044027649325645, -5.027872197965289, -3.961619896881676, -4.940525087646025, -4.21037710922385, -7.577317012754036, -3.540500525330087, -4.297302494870809, -3.594826647338568, -4.955086981686808, -4.940525087646025, -7.118196521392342, -5.167218171199661, -4.500681626985081, -8.414247422998777, -4.08005628089562, -5.179072079462735, -4.803928295855087, -7.577317012754036, -7.56417842301945, -4.626494827022153, -3.856563496862022, -9.410446726529091, -3.670841016751387, -4.911717146830066, -5.552181942649721, -15.04266056616892, -4.739038445401145, -3.981885680266266, -7.470609845227837, -4.085938357223855, -4.225616320938416, -3.677038010054722, -4.345797944265756, -3.670841016751387, -4.170370279229689, -3.961619896881676, -4.112167965551583, -4.085938357223855, -8.445668723558542, -4.206272779834342, -6.780490459024501] 
+    ]
+  },
+ "Synonymous site-posteriors":  [
+[0.04085586202903654, 0.004737916383329635, 0.9969293981352888, 0.007804788272135537, 0.002517481838872005, 0.02036396349920877, 0.9949411362869621, 0.001824743492308231, 0.0009449810452207522, 0.002349151691960933, 0.01357761132712239, 0.0001611613434308757, 0.002314791451287918, 0.03016803047798006, 0.003547205957263811, 0.0002802300084633684, 0.001548867973261993, 0.0003849664722033708, 0.0001611613434308757, 0.04214277667706635, 0.01108261581102633, 0.0001508262973435637, 0.02909578175741293, 0.003490694235646226, 0.0004130642878085782, 0.0004206633053807922, 0.03016803047798006, 0.003888800501427262, 0.0001912514046776123, 0.003187466639235546, 0.02194777114503789, 0.002353067117563985, 0.001824743492308231, 0.001771406614577179, 0.5126699941600711, 0.0001638824110301598, 0.003412065901830861, 0.02045067024382671, 0.01181456621335165, 0.01164157558019967, 0.006342549353691143, 0.003377853264250415, 0.002353067117563985, 0.002113121908914803, 0.01357761132712239, 0.002265026244181243, 0.01181456621335165, 0.04326123912421869, 0.003422570810710501, 0.0732233239485615],
+  [0.9591441379709634, 0.9952620836166703, 0.003070601864711271, 0.9921952117278645, 0.9974825181611279, 0.9796360365007913, 0.005058863713037933, 0.9981752565076919, 0.9990550189547792, 0.9976508483080391, 0.9864223886728776, 0.9998388386565692, 0.997685208548712, 0.96983196952202, 0.9964527940427362, 0.9997197699915366, 0.998451132026738, 0.9996150335277968, 0.9998388386565692, 0.9578572233229337, 0.9889173841889737, 0.9998491737026564, 0.9709042182425871, 0.9965093057643537, 0.9995869357121914, 0.9995793366946192, 0.96983196952202, 0.9961111994985729, 0.9998087485953223, 0.9968125333607644, 0.9780522288549621, 0.997646932882436, 0.9981752565076919, 0.9982285933854228, 0.487330005839929, 0.99983611758897, 0.9965879340981691, 0.9795493297561731, 0.9881854337866482, 0.9883584244198004, 0.9936574506463089, 0.9966221467357497, 0.997646932882436, 0.9978868780910852, 0.9864223886728776, 0.9977349737558187, 0.9881854337866482, 0.9567387608757814, 0.9965774291892896, 0.9267766760514385],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted \njointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. \nAssuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio \nstyle analysis to explore which individual sites may have been subject to selection. v2.0 adds support for synonymous rate variation, \nand relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2). Version 2.1 adds a grid search for the initial starting point.\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead. Version 3.0 implements the option\nfor branch-site variation in synonymous substitution rates. Version 3.1 adds HMM auto-correlation option for SRV, and binds SRV distributions for multiple branch sets\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "version":"3.1"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "ENSAMEP00000019610":{
+       "MG94xREV with separate rates for branch sets":0.03438531068530593,
+       "Nucleotide GTR":0.03506506601227222,
+       "original name":"ENSAMEP00000019610",
+       "unconstrained":0.06302365510701952
+      },
+     "ENSCPOP00000014246":{
+       "MG94xREV with separate rates for branch sets":0.04292382526589101,
+       "Nucleotide GTR":0.04045955880006232,
+       "original name":"ENSCPOP00000014246",
+       "unconstrained":0.1078448789562082
+      },
+     "ENSECAP00000003454":{
+       "MG94xREV with separate rates for branch sets":8.876771142787183e-20,
+       "Nucleotide GTR":5.919432424962508e-20,
+       "original name":"ENSECAP00000003454",
+       "unconstrained":0
+      },
+     "ENSMLUP00000022618":{
+       "MG94xREV with separate rates for branch sets":0.00642161905950072,
+       "Nucleotide GTR":0.006650006066551394,
+       "original name":"ENSMLUP00000022618",
+       "unconstrained":0.01597841801444432
+      },
+     "ENSMODP00000037081":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"ENSMODP00000037081",
+       "unconstrained":0
+      },
+     "ENSSHAP00000017740":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"ENSSHAP00000017740",
+       "unconstrained":0
+      },
+     "NODE_10":{
+       "MG94xREV with separate rates for branch sets":0.04182158200841169,
+       "Nucleotide GTR":0.03978686457017797,
+       "unconstrained":0.0751756912909278
+      },
+     "NODE_3":{
+       "MG94xREV with separate rates for branch sets":0.006653809619652947,
+       "Nucleotide GTR":0.006753140647338065,
+       "unconstrained":0
+      },
+     "NODE_5":{
+       "MG94xREV with separate rates for branch sets":0.007760920355263161,
+       "Nucleotide GTR":0.00957526133029154,
+       "unconstrained":0.01354228468684448
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":661.7249690562256,
+     "Equilibrium frequencies":      [
+[0.008683632825846126],
+      [0.01808176396549773],
+      [0.01769529087578192],
+      [0.009214600353378025],
+      [0.008154473584380702],
+      [0.01697990571144295],
+      [0.01661698334192711],
+      [0.008653085255815686],
+      [0.01045620266814465],
+      [0.02177275253486742],
+      [0.02130738958909377],
+      [0.01109555536642462],
+      [0.01602529029363231],
+      [0.03336915809079095],
+      [0.03265593776266527],
+      [0.01700516921479821],
+      [0.01117265189937555],
+      [0.02326460118303009],
+      [0.02276735200328369],
+      [0.01185581244680554],
+      [0.01049181795316886],
+      [0.02184691356750055],
+      [0.02137996553061118],
+      [0.01113334837593476],
+      [0.0134532994362436],
+      [0.02801355030112267],
+      [0.02741479879881114],
+      [0.01427591196282893],
+      [0.02061867350082822],
+      [0.04293387283879213],
+      [0.04201621975355471],
+      [0.02187941843434693],
+      [0.009973696676961937],
+      [0.02076803945919057],
+      [0.02032415088767462],
+      [0.01058354616865824],
+      [0.009365924115174338],
+      [0.0195024861789736],
+      [0.01908564708600072],
+      [0.009938610877756444],
+      [0.01200960426315045],
+      [0.02500737121898776],
+      [0.02447287270218853],
+      [0.01274394091811148],
+      [0.01840605052682857],
+      [0.03832656997801035],
+      [0.03750739171941377],
+      [0.0195315028963448],
+      [0.006277016124449313],
+      [0.003198813739017749],
+      [0.002830794731820552],
+      [0.005894510189698879],
+      [0.005768523058702086],
+      [0.003003885891920199],
+      [0.007558328877414115],
+      [0.007396779886955205],
+      [0.00385178017353078],
+      [0.005563119049891996],
+      [0.01158397730414281],
+      [0.01133638555875379],
+      [0.005903280319550348] 
+      ],
+     "Log Likelihood":-295.6993006543298,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[0.1196338089006467, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":24
+    },
+   "Nucleotide GTR":{
+     "AIC-c":661.7249690562256,
+     "Equilibrium frequencies":      [
+[0.2062430323299889],
+      [0.2920847268673356],
+      [0.2920847268673356],
+      [0.20958751393534] 
+      ],
+     "Log Likelihood":-313.7781603222198,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.6266831830492002,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0,
+       "Substitution rate from nucleotide C to nucleotide G":0.4187240317114962,
+       "Substitution rate from nucleotide C to nucleotide T":1.152583033399617,
+       "Substitution rate from nucleotide G to nucleotide T":1.122438781158973
+      },
+     "display order":0,
+     "estimated parameters":17
+    },
+   "Unconstrained model":{
+     "AIC-c":661.7249690562256,
+     "Log Likelihood":-293.6444394153309,
+     "Rate Distributions":{
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.9400884748717282,
+           "rate":0.3713337073154903
+          },
+         "1":{
+           "proportion":0,
+           "rate":10.55785367781318
+          },
+         "2":{
+           "proportion":0.05991152512827182,
+           "rate":10.86457839335081
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0,
+           "proportion":0.2106854485673991
+          },
+         "1":{
+           "omega":0,
+           "proportion":0.6484885115477229
+          },
+         "2":{
+           "omega":1,
+           "proportion":0.140826039884878
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":33
+    }
+  },
+ "input":{
+   "file name":"/home/aglucaci/BUSTEDS-MH/data/selectome_trip_ammended/ENSGT00390000001998.Euteleostomi.001.nex",
+   "number of sequences":6,
+   "number of sites":50,
+   "partition count":1,
+   "trees":{
+     "0":"(((ENSMLUP00000022618,ENSAMEP00000019610)NODE_3,ENSECAP00000003454)NODE_5,ENSCPOP00000014246,(ENSMODP00000037081,ENSSHAP00000017740)NODE_10)"
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "ENSAMEP00000019610":"test",
+     "ENSCPOP00000014246":"test",
+     "ENSECAP00000003454":"test",
+     "ENSMLUP00000022618":"test",
+     "ENSMODP00000037081":"test",
+     "ENSSHAP00000017740":"test",
+     "NODE_10":"test",
+     "NODE_3":"test",
+     "NODE_5":"test"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":81
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":1
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":78
+    }
+  }
+}

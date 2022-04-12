@@ -1,0 +1,439 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-4.538139382751075, -12.83346489717159, -11.01560518003447, -21.48615994566971, -13.17548722147608, -13.50347093944055, -19.78434660932401, -9.079387413485781, -16.00347465406034, -19.72011567456135, -20.98108287849373, -16.18493807123413, -15.77517523086293, -19.90914217656918, -25.04410050985791, -10.73166592548445, -30.74712015349128, -30.01750158431963, -8.550924912862808, -8.823936174488564, -18.40959062613766, -22.82293592838659] 
+    ]
+  },
+ "Synonymous site-posteriors":  [
+[0.5943359731897483, 0.6467574554653621, 0.2610115023428207, 0.0006675455579795944, 0.2405489412655222, 0.6462050804310027, 0.6539997900683862, 0.4638321848767011, 0.1841431550614957, 0.07902911466992975, 0.006332807601417647, 0.006378216374387522, 0.1039928181797189, 0.001702666813298788, 0.04068936437566933, 0.6303922261249195, 3.767587431912648e-05, 0.0006715855439859769, 0.5325862004650702, 0.4465049905157637, 0.005273878052888326, 0.6561402152033309],
+  [0.09509058931606024, 0.01542662042120518, 0.6027554749385275, 0.9989849138895204, 0.6338952248758468, 0.01619189266705938, 0.004443525684292281, 0.2939260012715667, 0.7197946776242286, 0.8797631705535341, 0.9903670912027255, 0.9902987813808048, 0.8417578141477422, 0.9974110517699166, 0.9381044444760118, 0.04031312492421224, 0.9999427404287463, 0.9989791724591039, 0.1892396611424724, 0.3203273235765312, 0.9919788241134834, 0.0009845290939038138],
+  [0.3105734374941914, 0.3378159241134326, 0.1362330227186517, 0.0003475405524999821, 0.125555833858631, 0.3376030269019379, 0.3415566842473216, 0.2422418138517322, 0.09606216731427557, 0.04120771477653607, 0.003300101195856998, 0.00332300224480775, 0.0542493676725389, 0.0008862814167844451, 0.02120619114831886, 0.3292946489508682, 1.958369693453548e-05, 0.000349241996909957, 0.2781741383924574, 0.2331676859077051, 0.002747297833628315, 0.3428752557027653] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted \njointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. \nAssuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio \nstyle analysis to explore which individual sites may have been subject to selection. v2.0 adds support for synonymous rate variation, \nand relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2). Version 2.1 adds a grid search for the initial starting point.\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead. Version 3.0 implements the option\nfor branch-site variation in synonymous substitution rates. Version 3.1 adds HMM auto-correlation option for SRV, and binds SRV distributions for multiple branch sets\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "version":"3.1"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "LOC100446528_PONAB":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"LOC100446528_PONAB",
+       "unconstrained":0
+      },
+     "NODE_11":{
+       "MG94xREV with separate rates for branch sets":0.01648154068543028,
+       "Nucleotide GTR":0.01566572839550215,
+       "unconstrained":0.01991131484246795
+      },
+     "NODE_16":{
+       "MG94xREV with separate rates for branch sets":0.01996907204464264,
+       "Nucleotide GTR":0.01674168339942306,
+       "unconstrained":0.02788067506453981
+      },
+     "NODE_27":{
+       "MG94xREV with separate rates for branch sets":0.05512891475750908,
+       "Nucleotide GTR":0.04919047187718398,
+       "unconstrained":0.07385252074566213
+      },
+     "NODE_33":{
+       "MG94xREV with separate rates for branch sets":0.01717788253597479,
+       "Nucleotide GTR":0.01580697136825051,
+       "unconstrained":0.02172054038018548
+      },
+     "NODE_35":{
+       "MG94xREV with separate rates for branch sets":0.08907969640107653,
+       "Nucleotide GTR":0.06137442088999007,
+       "unconstrained":0
+      },
+     "NODE_37":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0.02425143982355506,
+       "unconstrained":0.1258648749834114
+      },
+     "NODE_39":{
+       "MG94xREV with separate rates for branch sets":0.0955269336931346,
+       "Nucleotide GTR":0.03803039743953887,
+       "unconstrained":0.1651915288150105
+      },
+     "NODE_46":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0.04361325133397793,
+       "unconstrained":0.05855862155634182
+      },
+     "NRG4_CAVPO":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_CAVPO",
+       "unconstrained":0
+      },
+     "NRG4_CHOHO":{
+       "MG94xREV with separate rates for branch sets":0.0353906117935353,
+       "Nucleotide GTR":0.03233545433987787,
+       "original name":"NRG4_CHOHO",
+       "unconstrained":0.04807823954589877
+      },
+     "NRG4_DIPOR":{
+       "MG94xREV with separate rates for branch sets":0.05993256147241327,
+       "Nucleotide GTR":0.06443639379279027,
+       "original name":"NRG4_DIPOR",
+       "unconstrained":0.1981439446879524
+      },
+     "NRG4_GGOR":{
+       "MG94xREV with separate rates for branch sets":0.01621752635000235,
+       "Nucleotide GTR":0.01556728252988681,
+       "original name":"NRG4_GGOR",
+       "unconstrained":0.0191118124780816
+      },
+     "NRG4_HORSE":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_HORSE",
+       "unconstrained":0
+      },
+     "NRG4_HUMAN":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_HUMAN",
+       "unconstrained":0
+      },
+     "NRG4_LAMPA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_LAMPA",
+       "unconstrained":0
+      },
+     "NRG4_LOXAF":{
+       "MG94xREV with separate rates for branch sets":0.03831252127226466,
+       "Nucleotide GTR":0.03236877505292116,
+       "original name":"NRG4_LOXAF",
+       "unconstrained":0.05022983445790405
+      },
+     "NRG4_MACEU":{
+       "MG94xREV with separate rates for branch sets":0.09545752910341936,
+       "Nucleotide GTR":0.05578697872909783,
+       "original name":"NRG4_MACEU",
+       "unconstrained":0.08165538965642351
+      },
+     "NRG4_MACMU":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_MACMU",
+       "unconstrained":0
+      },
+     "NRG4_MELGA":{
+       "MG94xREV with separate rates for branch sets":0.02719148060573786,
+       "Nucleotide GTR":0.03514687451595819,
+       "original name":"NRG4_MELGA",
+       "unconstrained":0.04646541153602139
+      },
+     "NRG4_MOUSE":{
+       "MG94xREV with separate rates for branch sets":0.09689571736263529,
+       "Nucleotide GTR":0.09556583271731653,
+       "original name":"NRG4_MOUSE",
+       "unconstrained":0.1204618354559717
+      },
+     "NRG4_NOMLE":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"NRG4_NOMLE",
+       "unconstrained":0
+      },
+     "NRG4_OCHPR":{
+       "MG94xREV with separate rates for branch sets":0.0482314126696316,
+       "Nucleotide GTR":0.04720018441646132,
+       "original name":"NRG4_OCHPR",
+       "unconstrained":0.05604583547701253
+      },
+     "NRG4_ORENI":{
+       "MG94xREV with separate rates for branch sets":2.673134246332115,
+       "Nucleotide GTR":0.5151165121034919,
+       "original name":"NRG4_ORENI",
+       "unconstrained":5.145910535024148
+      },
+     "NRG4_ORNAN":{
+       "MG94xREV with separate rates for branch sets":0.06479148840595512,
+       "Nucleotide GTR":0.06472727213422914,
+       "original name":"NRG4_ORNAN",
+       "unconstrained":0.05893989807656991
+      },
+     "NRG4_OTOGA":{
+       "MG94xREV with separate rates for branch sets":0.07007275509803677,
+       "Nucleotide GTR":0.06365369926642295,
+       "original name":"NRG4_OTOGA",
+       "unconstrained":0.08289153373554384
+      },
+     "NRG4_PANTR":{
+       "MG94xREV with separate rates for branch sets":0.01608473686907349,
+       "Nucleotide GTR":0.01551681885838654,
+       "original name":"NRG4_PANTR",
+       "unconstrained":0.01896709469952682
+      },
+     "NRG4_PELSI":{
+       "MG94xREV with separate rates for branch sets":0.1204133665595777,
+       "Nucleotide GTR":0.1078708842768182,
+       "original name":"NRG4_PELSI",
+       "unconstrained":0.1345944177204956
+      },
+     "NRG4_PROCA":{
+       "MG94xREV with separate rates for branch sets":0.03396359713734024,
+       "Nucleotide GTR":0.03145272240495462,
+       "original name":"NRG4_PROCA",
+       "unconstrained":0.04237322546825618
+      },
+     "NRG4_RABIT":{
+       "MG94xREV with separate rates for branch sets":0.05602242797885901,
+       "Nucleotide GTR":0.04872338394803215,
+       "original name":"NRG4_RABIT",
+       "unconstrained":0.07285594689253211
+      },
+     "NRG4_TAEGU":{
+       "MG94xREV with separate rates for branch sets":0.03266844619790658,
+       "Nucleotide GTR":0.02811119229530369,
+       "original name":"NRG4_TAEGU",
+       "unconstrained":0.03447142538798974
+      },
+     "NRG4_TARSY":{
+       "MG94xREV with separate rates for branch sets":0.03607476761745981,
+       "Nucleotide GTR":0.03210910608696973,
+       "original name":"NRG4_TARSY",
+       "unconstrained":0.04780408425323555
+      },
+     "NRG4_TURTR":{
+       "MG94xREV with separate rates for branch sets":0.01803099755413731,
+       "Nucleotide GTR":0.01660142363665726,
+       "original name":"NRG4_TURTR",
+       "unconstrained":0.02220257214386764
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":865.7145565705716,
+     "Equilibrium frequencies":      [
+[0.02917523061017934],
+      [0.009655391881883323],
+      [0.02257225238429675],
+      [0.0291045233348751],
+      [0.005324630761995225],
+      [0.001762159049240121],
+      [0.004119553021493931],
+      [0.005311726317872325],
+      [0.01971859240665683],
+      [0.006525766311474246],
+      [0.01525585351537345],
+      [0.01967080365185525],
+      [0.007674253553020743],
+      [0.002539754576249954],
+      [0.005937405958307366],
+      [0.007655654709159724],
+      [0.02729119355223524],
+      [0.00903187954851058],
+      [0.02111461317857804],
+      [0.02722505231202836],
+      [0.004980784236512476],
+      [0.001648364817581107],
+      [0.003853526313483878],
+      [0.004968713117454407],
+      [0.01844523284624689],
+      [0.006104354541792776],
+      [0.01427068243797665],
+      [0.01840053012652082],
+      [0.007178676387611616],
+      [0.002375745872988204],
+      [0.005553988497003521],
+      [0.007161278593762412],
+      [0.07414276164510998],
+      [0.02453716402292406],
+      [0.05736267009105543],
+      [0.0739630738568795],
+      [0.01353143818157486],
+      [0.004478159577014593],
+      [0.01046898452451134],
+      [0.01349864422914478],
+      [0.05011068862892687],
+      [0.0165838735826311],
+      [0.03876956881665223],
+      [0.04998924347896689],
+      [0.01950251429331402],
+      [0.006454256375895708],
+      [0.01508867849714429],
+      [0.019455249211996],
+      [0.01125083067543653],
+      [0.03391370002748151],
+      [0.006204462733908617],
+      [0.002053334896058278],
+      [0.004800260214220402],
+      [0.006189425983711062],
+      [0.007604071662344981],
+      [0.01777670205523037],
+      [0.02292117024810122],
+      [0.008942332775473249],
+      [0.002959418845357083],
+      [0.006918491751078921],
+      [0.008920660693635552] 
+      ],
+     "Log Likelihood":-374.2173906370709,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[0.02722623938491413, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":48
+    },
+   "Nucleotide GTR":{
+     "AIC-c":865.7145565705716,
+     "Equilibrium frequencies":      [
+[0.3116076970825574],
+      [0.1291123525760397],
+      [0.351334574798262],
+      [0.2079453755431409] 
+      ],
+     "Log Likelihood":-439.333966939404,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.7997086369721531,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.3900884645328811,
+       "Substitution rate from nucleotide C to nucleotide G":0.8481584642000165,
+       "Substitution rate from nucleotide C to nucleotide T":5.441199128470729,
+       "Substitution rate from nucleotide G to nucleotide T":0.02635616965067282
+      },
+     "display order":0,
+     "estimated parameters":55
+    },
+   "Unconstrained model":{
+     "AIC-c":865.7145565705716,
+     "Log Likelihood":-369.1377660901638,
+     "Rate Distributions":{
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.147424088713806,
+           "rate":0.2724053928634815
+          },
+         "1":{
+           "proportion":0.2822692663194352,
+           "rate":0.2725787691259549
+          },
+         "2":{
+           "proportion":0.5703066449667588,
+           "rate":1.548115004117475
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0,
+           "proportion":0.3897429921999726
+          },
+         "1":{
+           "omega":0.03491009799620094,
+           "proportion":0.6102570078000273
+          },
+         "2":{
+           "omega":1.074521796750128,
+           "proportion":0
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":57
+    }
+  },
+ "input":{
+   "file name":"/home/aglucaci/BUSTEDS-MH/data/selectome_trip_ammended/ENSGT00390000014815.Euteleostomi.001.nex",
+   "number of sequences":25,
+   "number of sites":22,
+   "partition count":1,
+   "trees":{
+     "0":"((NRG4_PELSI,NRG4_TAEGU,NRG4_MELGA)NODE_46,NRG4_ORENI,((((NRG4_MACMU,NRG4_NOMLE,LOC100446528_PONAB,NRG4_PANTR,NRG4_HUMAN,NRG4_GGOR)NODE_11,NRG4_TARSY,NRG4_HORSE,(NRG4_LOXAF,NRG4_PROCA)NODE_16,NRG4_CHOHO,(NRG4_TURTR,NRG4_LAMPA)NODE_33,NRG4_OTOGA,(NRG4_CAVPO,NRG4_MOUSE)NODE_27,NRG4_RABIT,NRG4_OCHPR)NODE_35,NRG4_DIPOR)NODE_37,NRG4_MACEU)NODE_39,NRG4_ORNAN)"
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "LOC100446528_PONAB":"test",
+     "NODE_11":"test",
+     "NODE_16":"test",
+     "NODE_27":"test",
+     "NODE_33":"test",
+     "NODE_35":"test",
+     "NODE_37":"test",
+     "NODE_39":"test",
+     "NODE_46":"test",
+     "NRG4_CAVPO":"test",
+     "NRG4_CHOHO":"test",
+     "NRG4_DIPOR":"test",
+     "NRG4_GGOR":"test",
+     "NRG4_HORSE":"test",
+     "NRG4_HUMAN":"test",
+     "NRG4_LAMPA":"test",
+     "NRG4_LOXAF":"test",
+     "NRG4_MACEU":"test",
+     "NRG4_MACMU":"test",
+     "NRG4_MELGA":"test",
+     "NRG4_MOUSE":"test",
+     "NRG4_NOMLE":"test",
+     "NRG4_OCHPR":"test",
+     "NRG4_ORENI":"test",
+     "NRG4_ORNAN":"test",
+     "NRG4_OTOGA":"test",
+     "NRG4_PANTR":"test",
+     "NRG4_PELSI":"test",
+     "NRG4_PROCA":"test",
+     "NRG4_RABIT":"test",
+     "NRG4_TAEGU":"test",
+     "NRG4_TARSY":"test",
+     "NRG4_TURTR":"test"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":146
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":5
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":140
+    }
+  }
+}

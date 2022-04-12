@@ -1,0 +1,374 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-4.36088821704402, -8.005259312863625, -4.906022543924874, -5.852982052837694, -6.610193003862021, -5.021701936011526, -3.873585565582071, -8.007279670015668, -18.62775629807129, -10.32562220349295, -24.59728732273044, -4.614644974446443, -4.288632226344038, -4.272009724876098, -3.566768468456529, -4.840717968205751, -4.319222879938073, -4.53135605828303, -4.22582590032706, -3.532491126429654] 
+    ]
+  },
+ "Synonymous site-posteriors":  [
+[0.3575080090264459, 0.5526018789327122, 0.2780502762620776, 0.278377121934783, 0.5528058423631393, 0.2984673887553489, 0.2710396061499822, 0.5534089644504218, 0.5737653062359807, 0.001562568717489486, 0.5738626818642751, 0.0003022899587286226, 0.3575080090264459, 0.3575080090264453, 0.357508009026445, 0.3575080090264449, 0.3575080090264453, 0.3575080090264453, 0.357508009026445, 0.3575080090264455],
+  [0.2655326119378592, 0.4104055511517812, 0.2065418967484071, 0.2067852617163506, 0.4105572485717633, 0.2217020037835388, 0.2013356990877512, 0.4110023504769065, 0.4262346350079542, 0.001161565137897495, 0.4261373180724699, 0.0002247729140781205, 0.2655326119378584, 0.2655326119378592, 0.2655326119378595, 0.2655326119378596, 0.26553261193786, 0.265532611937859, 0.265532611937859, 0.2655326119378588],
+  [0.376959379035695, 0.03699256991550674, 0.5154078269895154, 0.5148376163488663, 0.03663690906509725, 0.4798306074611124, 0.5276246947622666, 0.03558868507267163, 5.875606506665144e-08, 0.9972758661446131, 6.325503482600802e-11, 0.9994729371271932, 0.3769593790356955, 0.3769593790356955, 0.3769593790356957, 0.3769593790356956, 0.3769593790356949, 0.3769593790356957, 0.3769593790356961, 0.3769593790356957] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Sadie Wisotsky",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED-SMSH (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted\njointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection and.\nAssuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio\nstyle analysis to explore which individual sites may have been subject to selection. v2.0 adds support for synonymous rate variation,\nand relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2). Version 2.1 adds a grid search for the initial starting point.\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead.\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "version":"2.2"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "CALT_CAVPO":{
+       "MG94 with double and triple instantaneous substitutions":0.218808919391599,
+       "MG94 with double instantaneous substitutions":0.1209379376663552,
+       "MG94xREV with separate rates for branch sets":0.218808919391599,
+       "Nucleotide GTR":0.1903269187892604,
+       "original name":"CALT_CAVPO",
+       "unconstrained":0.2293274771435468
+      },
+     "ENSMLUP00000017849":{
+       "MG94 with double and triple instantaneous substitutions":0,
+       "MG94 with double instantaneous substitutions":0,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"ENSMLUP00000017849",
+       "unconstrained":0
+      },
+     "GM10267_MOUSE":{
+       "MG94 with double and triple instantaneous substitutions":0.1055020860770582,
+       "MG94 with double instantaneous substitutions":0.2429562165247936,
+       "MG94xREV with separate rates for branch sets":0.1055020860770582,
+       "Nucleotide GTR":0.3444803606704636,
+       "original name":"GM10267_MOUSE",
+       "unconstrained":1.198229880507629
+      },
+     "IACS_PIG":{
+       "MG94 with double and triple instantaneous substitutions":0,
+       "MG94 with double instantaneous substitutions":0,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":0,
+       "original name":"IACS_PIG",
+       "unconstrained":0
+      },
+     "LOC100361300_RAT":{
+       "MG94 with double and triple instantaneous substitutions":0.01612844362740011,
+       "MG94 with double instantaneous substitutions":0,
+       "MG94xREV with separate rates for branch sets":0.01612844362740011,
+       "Nucleotide GTR":4.424909966576675e-20,
+       "original name":"LOC100361300_RAT",
+       "unconstrained":0.05855203298257425
+      },
+     "LOC777593_BOVIN":{
+       "MG94 with double and triple instantaneous substitutions":0.1276546096510682,
+       "MG94 with double instantaneous substitutions":0.1286178300784937,
+       "MG94xREV with separate rates for branch sets":0.1276546096510682,
+       "Nucleotide GTR":0.1088637707074884,
+       "original name":"LOC777593_BOVIN",
+       "unconstrained":0.1551148793959997
+      },
+     "NODE_12":{
+       "MG94 with double and triple instantaneous substitutions":0.5591321550930015,
+       "MG94 with double instantaneous substitutions":0.3962100694050589,
+       "MG94xREV with separate rates for branch sets":0.5591321550930015,
+       "Nucleotide GTR":0.506406600119699,
+       "unconstrained":1.450830781842658
+      },
+     "NODE_3":{
+       "MG94 with double and triple instantaneous substitutions":0.1215814402161582,
+       "MG94 with double instantaneous substitutions":0.2456320138912029,
+       "MG94xREV with separate rates for branch sets":0.1215814402161582,
+       "Nucleotide GTR":0.3293395692586086,
+       "unconstrained":0.9294409345475938
+      },
+     "NODE_6":{
+       "MG94 with double and triple instantaneous substitutions":0.09062850773061243,
+       "MG94 with double instantaneous substitutions":0.1135554336643674,
+       "MG94xREV with separate rates for branch sets":0.09062850773061243,
+       "Nucleotide GTR":0.1017326972055613,
+       "unconstrained":0.2445344916744497
+      },
+     "RGD1559536_RAT":{
+       "MG94 with double and triple instantaneous substitutions":0.08803158698372025,
+       "MG94 with double instantaneous substitutions":0.0777369512889531,
+       "MG94xREV with separate rates for branch sets":0.08803158698372025,
+       "Nucleotide GTR":0.075016966545686,
+       "original name":"RGD1559536_RAT",
+       "unconstrained":0
+      },
+     "SPINK10_MOUSE":{
+       "MG94 with double and triple instantaneous substitutions":0.1069352002482254,
+       "MG94 with double instantaneous substitutions":0.1287651205601463,
+       "MG94xREV with separate rates for branch sets":0.1069352002482254,
+       "Nucleotide GTR":0.1352105504233766,
+       "original name":"SPINK10_MOUSE",
+       "unconstrained":0.06399505828774904
+      }
+    },
+   "attributes":{
+     "MG94 with double and triple instantaneous substitutions":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "MG94 with double instantaneous substitutions":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94 with double and triple instantaneous substitutions":{
+     "AIC-c":377.2563626760807,
+     "Log Likelihood":-141.1883823761618,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":2.025193915951944,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.5624224835594492,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":0.9588327646634583,
+       "Substitution rate from nucleotide G to nucleotide T":0.3815855125622353,
+       "non-synonymous/synonymous rate ratio for *test*":1.899006245506168,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":1.760314304974179,
+       "rate at which 3 nucleotides are changed instantly within a single codon between synonymous codon islands":0.04744318007640248
+      },
+     "display order":0,
+     "estimated parameters":29
+    },
+   "MG94 with double instantaneous substitutions":{
+     "AIC-c":377.2563626760807,
+     "Log Likelihood":-142.3901599390574,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":1.804095137364526,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.5333053359639215,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":0.74632747183398,
+       "Substitution rate from nucleotide G to nucleotide T":0.3605800358423828,
+       "non-synonymous/synonymous rate ratio for *test*":1.9570463573087,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.5420274180097666
+      },
+     "display order":0,
+     "estimated parameters":27
+    },
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":377.2563626760807,
+     "Equilibrium frequencies":      [
+[0.01540200121534844],
+      [0.01607064934384322],
+      [0.0102408399660653],
+      [0.02181340620026946],
+      [0.007572628057668494],
+      [0.007901379075653173],
+      [0.005035064663145108],
+      [0.01072489279255932],
+      [0.02272190408777533],
+      [0.02370833165856325],
+      [0.01510786684364821],
+      [0.03218037166600714],
+      [0.006615913332435342],
+      [0.006903130428847994],
+      [0.004398941976404416],
+      [0.009369925562814314],
+      [0.01399086912506374],
+      [0.01459825567994641],
+      [0.009302573717054492],
+      [0.01981486087766937],
+      [0.006878823511716536],
+      [0.007177454345661127],
+      [0.004573751797142853],
+      [0.009742277600361962],
+      [0.02064012214513538],
+      [0.02153617317456235],
+      [0.01372368335861022],
+      [0.02923200447006519],
+      [0.006009763035509092],
+      [0.006270665287768738],
+      [0.003995910701480299],
+      [0.008511452533212808],
+      [0.02098607998225878],
+      [0.02189715010284775],
+      [0.01395371183318638],
+      [0.02972197448914421],
+      [0.01031812527944491],
+      [0.01076606675543961],
+      [0.006860554564254238],
+      [0.01461326062755467],
+      [0.0309598531949264],
+      [0.03230391541176555],
+      [0.02058530560471352],
+      [0.0438475393034412],
+      [0.009014548460872801],
+      [0.009405897667596759],
+      [0.00599380216008184],
+      [0.01276704270696188],
+      [0.02824698738100806],
+      [0.03834089068167435],
+      [0.01331022316580989],
+      [0.01388806079127363],
+      [0.008850010037516438],
+      [0.01885088180896363],
+      [0.04167155482368561],
+      [0.02655472812304081],
+      [0.05656265238057084],
+      [0.01162862908751966],
+      [0.01213346355465251],
+      [0.007731912745945508],
+      [0.01646928904183941] 
+      ],
+     "Log Likelihood":-141.1883823761618,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[1.899006245506168, 1] 
+        ],
+       "rate at which 2 nucleotides are changed instantly within a single codon":        [
+[0, 1] 
+        ],
+       "rate at which 3 nucleotides are changed instantly within a single codon":        [
+[1.760314304974179, 1] 
+        ],
+       "rate at which 3 nucleotides are changed instantly within a single codon between synonymous codon islands":        [
+[0.04744318007640248, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":29
+    },
+   "Nucleotide GTR":{
+     "AIC-c":377.2563626760807,
+     "Equilibrium frequencies":      [
+[0.2287581699346405],
+      [0.2091503267973856],
+      [0.2941176470588235],
+      [0.2679738562091503] 
+      ],
+     "Log Likelihood":-145.1348427382591,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":1.258385072553116,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.3977690742985675,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":0.6324651637523417,
+       "Substitution rate from nucleotide G to nucleotide T":0.2124257444293385
+      },
+     "display order":0,
+     "estimated parameters":21
+    },
+   "Unconstrained model":{
+     "AIC-c":377.2563626760807,
+     "Log Likelihood":-138.3802474537428,
+     "Rate Distributions":{
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.3769593790356954,
+           "rate":0.04937064505362605
+          },
+         "1":{
+           "proportion":0.2655326119378588,
+           "rate":1.574960918635822
+          },
+         "2":{
+           "proportion":0.3575080090264457,
+           "rate":1.57530956413039
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0.1635452215760897,
+           "proportion":0
+          },
+         "1":{
+           "omega":0.2294328799977931,
+           "proportion":0
+          },
+         "2":{
+           "omega":1,
+           "proportion":1
+          }
+        }
+      },
+     "display order":4,
+     "estimated parameters":38,
+     "rate at which 2 nucleotides are changed instantly within a single codon":0,
+     "rate at which 3 nucleotides are changed instantly within a single codon":0,
+     "rate at which 3 nucleotides are changed instantly within a single codon between synonymous codon islands":1.056491495569192
+    }
+  },
+ "input":{
+   "file name":"/home/aglucaci/BUSTEDS-MH/data/selectome_trip_ammended/ENSGT00530000065422.Euteleostomi.001.nex",
+   "number of sequences":8,
+   "number of sites":20,
+   "partition count":1,
+   "trees":{
+     "0":"(CALT_CAVPO,(LOC777593_BOVIN,IACS_PIG)NODE_12,ENSMLUP00000017849,(LOC100361300_RAT,SPINK10_MOUSE)NODE_3,(RGD1559536_RAT,GM10267_MOUSE)NODE_6)"
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "CALT_CAVPO":"test",
+     "ENSMLUP00000017849":"test",
+     "GM10267_MOUSE":"test",
+     "IACS_PIG":"test",
+     "LOC100361300_RAT":"test",
+     "LOC777593_BOVIN":"test",
+     "NODE_12":"test",
+     "NODE_3":"test",
+     "NODE_6":"test",
+     "RGD1559536_RAT":"test",
+     "SPINK10_MOUSE":"test"
+    }
+  },
+ "timers":{
+   "MG94 with double and triple instantaneous substitutions":{
+     "order":null,
+     "timer":10
+    },
+   "MG94 with double instantaneous substitutions":{
+     "order":null,
+     "timer":11
+    },
+   "Overall":{
+     "order":0,
+     "timer":817
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":25
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":785
+    }
+  }
+}
