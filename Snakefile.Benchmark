@@ -1,0 +1,112 @@
+# #############################################################################
+# Snakefile for BUSTED[S]-MH Analysis
+# @Author: Alexander G Lucaci
+# #############################################################################
+
+# #############################################################################
+# Imports
+# #############################################################################
+import os
+import sys
+import json
+import csv
+from pathlib import Path
+import glob
+
+# #############################################################################
+# Declares 
+# #############################################################################
+configfile: "config.yaml"
+
+with open("cluster.json", "r") as in_c:
+  cluster = json.load(in_c)
+#end with
+
+# Get working directory
+BASEDIR = os.getcwd()
+
+# Data directories
+DATA_DIR = os.path.join(BASEDIR, config["DataDirectory"])
+
+# Glob all of the files
+NEXUS = glob.glob(DATA_DIR + "/" + config["FileEnding"])
+
+# Just filenames
+NEXUS_FileNames = [os.path.basename(x) for x in glob.glob(NEXUS)]
+
+# #############################################################################
+# Report to user
+# #############################################################################
+print("# Number of NEXUS files to process:", len(NEXUS))
+
+OUTDIR = os.path.join(BASEDIR, config["OutputDirectory"])
+OUTDIR_BUSTEDSMH = os.path.join(OUTDIR, "BUSTEDS-MH")
+OUTDIR_BUSTEDS    = os.path.join(OUTDIR, "BUSTEDS")
+
+# Report to user
+print("# Files for BUSTED[S]-MH and BUSTED[S] will be saved in:", OUTDIR)
+
+# Create output directories
+Path(OUTDIR).mkdir(parents=True, exist_ok=True)
+Path(OUTDIR_BUSTEDSMH).mkdir(parents=True, exist_ok=True)
+Path(OUTDIR_BUSTEDS).mkdir(parents=True, exist_ok=True)
+
+# Settings, these can be passed in or set in a config.json type file
+PPN = cluster["__default__"]["ppn"] 
+
+# Use conda-environment HyPhy installation
+HYPHY = "HYPHYMPI
+
+# #############################################################################
+# Helper functions
+# #############################################################################
+def assign_code(wildcards):
+    if wildcards.sample == "COXI.nex":
+        return "Vertebrate-mtDNA"
+    elif wildcards.sample == "mammalian_mtDNA.nex":
+        return "Vertebrate-mtDNA" 
+    else:
+        return "Universal"
+    #end if
+#end method
+
+# #############################################################################
+# Rule All
+# #############################################################################
+rule all:
+    input:
+        expand(os.path.join(OUTDIR_BUSTEDSMH, "{sample}.BUSTEDS-MH.json"), sample=NEXUS_FileNames),
+        expand(os.path.join(OUTDIR_BUSTEDS, "{sample}.BUSTEDS.json"), fasta=NEXUS_FileNames)
+    #end input
+#end rule all
+
+# #############################################################################
+# Individual rules
+# #############################################################################
+
+rule BUSTEDSMH:
+    input:
+        nexus = os.path.join(DATA_DIR, "{sample}")
+    output:
+        output = os.path.join(OUTDIR_BUSTEDSMH, "{sample}.BUSTEDS-MH.json")
+    conda: 'environment.yml'        
+    shell:
+        "mpirun --use-hwthread-cpus -np {PPN} {HYPHY} BUSTED --alignment {input.nexus} --output {output.output} --starting-points 10 --srv Yes --code {params.code} --multiple-hits Double+Triple"
+    #end shell
+#end rule
+
+rule BUSTEDS:
+    input:
+        nexus = os.path.join(DATA_DIR, "{sample}")
+    output:
+        output = os.path.join(OUTDIR_BUSTEDS, "{sample}.BUSTEDS.json")
+    conda: 'environment.yml'
+    shell:
+        "mpirun --use-hwthread-cpus -np {PPN} {HYPHY } BUSTED --alignment {input.nexus}  --output {output.output} --starting-points 10 --srv Yes --code {params.code}"
+    #end shell
+#end rule
+
+
+# #############################################################################
+# End of file
+# #############################################################################
