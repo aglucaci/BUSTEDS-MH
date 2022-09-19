@@ -1,0 +1,120 @@
+# #############################################################################
+# Snakefile for BUSTED[S]-MH Analysis
+# @Author: Alexander G Lucaci
+# #############################################################################
+
+# #############################################################################
+# Imports
+# #############################################################################
+import os
+import sys
+import json
+import csv
+from pathlib import Path
+import glob
+
+# #############################################################################
+# Declares 
+# #############################################################################
+configfile: "config.yaml"
+
+with open("cluster.json", "r") as in_c:
+  cluster = json.load(in_c)
+#end with
+
+# Get working directory
+BASEDIR = os.getcwd()
+
+# Data directories
+DATA_DIR = os.path.join(BASEDIR, config["DataDirectory"])
+
+# Glob all of the files
+FASTAs = glob.glob(DATA_DIR + "/" + config["FileEnding"])
+
+# Just filenames
+FASTA_FileNames = [os.path.basename(x) for x in glob.glob(FASTAs)]
+
+# #############################################################################
+# Report to user
+# #############################################################################
+print("# Number of FASTA files to process:", len(FASTAS))
+
+OUTDIR = os.path.join(BASEDIR, config["OutputDirectory"])
+OUTDIR_BUSTEDSMH = os.path.join(OUTDIR, "BUSTEDS-MH")
+OUTDIR_BUSTEDS    = os.path.join(OUTDIR, "BUSTEDS")
+
+# Report to user
+print("# Files for BUSTEDS-MH and BUSTEDS will be saved in:", OUTDIR)
+
+# Create output directories
+Path(OUTDIR).mkdir(parents=True, exist_ok=True)
+Path(OUTDIR_BUSTEDSMH).mkdir(parents=True, exist_ok=True)
+Path(OUTDIR_BUSTEDS).mkdir(parents=True, exist_ok=True)
+
+# Settings, these can be passed in or set in a config.json type file
+PPN = cluster["__default__"]["ppn"] 
+
+HYPHY = "HYPHYMPI
+
+# #############################################################################
+# Helper functions
+# #############################################################################
+def assign_code(wildcards):
+    if wildcards.sample == "COXI.nex":
+        return "Vertebrate-mtDNA"
+    return "Universal"
+#end method
+
+# #############################################################################
+# Rule All
+# #############################################################################
+rule all:
+    input:
+        expand(os.path.join(DATA_DIR, "{sample}.raxml.bestTree"), sample=FASTA_FileNames),
+        expand(os.path.join(OUTDIR_BUSTEDSMH, "{sample}.BUSTEDS-MH.json"), sample=FASTA_FileNames),
+        expand(os.path.join(OUTDIR_BUSTEDS, "{sample}.BUSTEDS.json"), fasta=FASTA_FileNames)
+    #end input
+#end rule all
+
+# #############################################################################
+# Individual rules
+# #############################################################################
+rule RAXML:
+    params:
+        THREADS = PPN
+    input:
+        fasta = os.path.join(FASTA_DIR, "{sample}"),
+    output:
+        tree = os.path.join(DATA_DIR, "{sample}.raxml.bestTree")
+    shell:
+        "raxml-ng --model GTR+G --msa {input.fasta} --threads {params.THREADS} --tree pars{{3}} --force"
+#end rule 
+
+rule BUSTEDSMH:
+    input:
+        fasta = os.path.join(FASTA_DIR, "{sample}"),
+        tree  = rules.RAXML.output.tree
+    output:
+        output = os.path.join(OUTDIR_BUSTEDSMH, "{sample}.BUSTEDS-MH.json")
+    conda: 'environment.yml'        
+    shell:
+        "mpirun --use-hwthread-cpus -np {PPN} {HYPHY} BUSTED --alignment {input.fasta} --tree {input.tree} --output {output.output} --starting-points 10 --srv Yes --code {params.code} --multiple-hits Double+Triple"
+    #end shell
+#end rule
+
+rule BUSTEDS:
+    input:
+        fasta = os.path.join(FASTA_DIR, "{sample}"),
+        tree  = rules.RAXML.output.tree
+    output:
+        output = os.path.join(OUTDIR_BUSTEDS, "{sample}.BUSTEDS.json")
+    conda: 'environment.yml'
+    shell:
+        "mpirun --use-hwthread-cpus -np {PPN} {HYPHY } BUSTED --alignment {input.fasta} --tree {input.tree} --output {output.output} --starting-points 10 --srv Yes --code {params.code}"
+    #end shell
+#end rule
+
+
+# #############################################################################
+# End of file
+# #############################################################################

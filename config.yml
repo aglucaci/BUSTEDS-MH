@@ -1,11 +1,7 @@
-# BUSTEDS-MH configuration yaml
+# BUSTED[S]-MH configuration YAML
 
-
-# Simulations for Shultz-Sackton
-DataDirectory: /home/aglucaci/BUSTEDS-MH/data/sims/null
-SubDirectory: "null-0.25"
-FileEnding: "*.*"
-OutputDirectory: /home/aglucaci/BUSTEDS-MH/analysis/Simulations-Shultz-Sackton
-
-# Defaults
-BUSTEDSMHBF: /home/aglucaci/hyphy-analyses/BUSTED-MH/BUSTED-MH.bf
+# Empirical analysis on Enard dataset
+DataDirectory: data/Enard
+SubDirectory: ""
+FileEnding: "*.fa"
+OutputDirectory: analysis/Enard
