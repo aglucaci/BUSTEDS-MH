@@ -478,10 +478,10 @@ else:
             row.append ("%.5f" % (result['BUSTED']["AIC"] - result['MH']["AIC"]))
             row.append ("%.5f" % (result['S']["AIC"] - result['MH']["AIC"]))
             row.append ("%.5f" % (result['noS']["AIC"] - result['MH']["AIC"]))
-            row.append ("%.5f" % result['MH']["p"])
-            row.append ("%.5f" % result['BUSTED']["p"])
-            row.append ("%.5f" % result['S']["p"])
-            row.append ("%.5f" % result['noS']["p"])
+            row.append ("%.5f" % result['MH']["p"])      # p = BUSTEDS-MH
+            row.append ("%.5f" % result['BUSTED']["p"])  # p_plain = BUSTED
+            row.append ("%.5f" % result['S']["p"])       # p_s = BUSTEDS
+            row.append ("%.5f" % result['noS']["p"])     # p_MH = BUSTED-MH
             for model in ['BUSTED','S','noS','MH']:
                 row.append ("%.5f" % (result[model]["omega1"]["omega"]))
                 row.append ("%.5f" % (result[model]["omega1"]["proportion"]))
